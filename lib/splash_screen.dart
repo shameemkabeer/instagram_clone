@@ -22,7 +22,7 @@ class _ScreensplashState extends State<Screensplash> {
       body: Container(
         width: double.infinity,
         height: double.infinity,
-        color: Colors.white,
+        color: Colors.orange,
         child: Column(
           children: [
             Column(
