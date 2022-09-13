@@ -29,12 +29,9 @@ class _loginState extends State<login> {
                         SizedBox(
                           height: 150,
                         ),
-                        Text(
-                          "Instagram",
-                          style: GoogleFonts.combo(
-                              fontWeight: FontWeight.bold,
-                              fontStyle: FontStyle.italic,
-                              fontSize: 40),
+                        Image.asset(
+                          "asset/ins.png",
+                          height: 70,
                         ),
                         SizedBox(
                           height: 50,
@@ -69,7 +66,7 @@ class _loginState extends State<login> {
                               style: TextStyle(fontWeight: FontWeight.bold)),
                           style: ButtonStyle(
                               minimumSize:
-                                  MaterialStateProperty.all(Size(350, 40))),
+                                  MaterialStateProperty.all(Size(370, 40))),
                         ),
                         SizedBox(height: 10.0),
                         Row(
