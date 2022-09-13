@@ -28,7 +28,7 @@ class _ScreensplashState extends State<Screensplash> {
             Column(
               children: [
                 SizedBox(
-                  height: 250,
+                  height: 360,
                 ),
                 Image.asset(
                   "asset/splash icon.png",
@@ -36,7 +36,7 @@ class _ScreensplashState extends State<Screensplash> {
                   width: 200,
                 ),
                 SizedBox(
-                  height: 300,
+                  height: 350,
                 ),
                 Text(
                   "from",
