@@ -43,7 +43,7 @@ class _ScreensplashState extends State<Screensplash> {
                   style: TextStyle(color: Colors.black54),
                 ),
                 Text(
-                  "Proxima Centauri",
+                  "Proxima B",
                   style: TextStyle(
                       color: Colors.blueGrey, fontWeight: FontWeight.bold),
                   textAlign: TextAlign.end,
