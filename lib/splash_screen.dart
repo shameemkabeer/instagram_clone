@@ -22,7 +22,7 @@ class _ScreensplashState extends State<Screensplash> {
       body: Container(
         width: double.infinity,
         height: double.infinity,
-        color: Colors.orange,
+        color: Colors.white,
         child: Column(
           children: [
             Column(
@@ -36,7 +36,7 @@ class _ScreensplashState extends State<Screensplash> {
                   width: 200,
                 ),
                 SizedBox(
-                  height: 350,
+                  height: 250,
                 ),
                 Text(
                   "from",
