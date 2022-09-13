@@ -36,7 +36,7 @@ class _ScreensplashState extends State<Screensplash> {
                   width: 200,
                 ),
                 SizedBox(
-                  height: 300,
+                  height: 350,
                 ),
                 Text(
                   "from",
