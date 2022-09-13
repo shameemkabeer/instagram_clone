@@ -96,25 +96,55 @@ class _homescreenState extends State<homescreen> {
         child: ListView(
           scrollDirection: Axis.horizontal,
           children: [
+            Stack(
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(top: 8.0),
+                  child: Container(
+                      child: Image.asset(
+                    "asset/cropround.jpg",
+                    scale: 6,
+                  )),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(top: 13.0, left: 6),
+                  child: Container(
+                    height: 70,
+                    width: 70,
+                    child: ClipRRect(
+                        borderRadius: BorderRadius.circular(60),
+                        child: Image.asset(
+                          "asset/elonmusk.jpg",
+                          scale: 8,
+                        )),
+                  ),
+                )
+              ],
+            ),
             Container(
                 child: Image.asset(
               "asset/cropround.jpg",
-              scale: 7,
+              scale: 6,
             )),
             Container(
                 child: Image.asset(
               "asset/cropround.jpg",
-              scale: 7,
+              scale: 6,
             )),
             Container(
                 child: Image.asset(
               "asset/cropround.jpg",
-              scale: 7,
+              scale: 6,
             )),
             Container(
                 child: Image.asset(
               "asset/cropround.jpg",
-              scale: 7,
+              scale: 6,
+            )),
+            Container(
+                child: Image.asset(
+              "asset/cropround.jpg",
+              scale: 6,
             ))
           ],
         ),
