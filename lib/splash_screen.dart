@@ -30,13 +30,13 @@ class _ScreensplashState extends State<Screensplash> {
                 SizedBox(
                   height: 250,
                 ),
-                Image.network(
-                  "https://img.icons8.com/3d-fluency/344/instagram-new.png",
-                  height: 100.0,
-                  width: 100.0,
+                Image.asset(
+                  "asset/splash icon.png",
+                  height: 200,
+                  width: 200,
                 ),
                 SizedBox(
-                  height: 380,
+                  height: 300,
                 ),
                 Text(
                   "from",
