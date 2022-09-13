@@ -22,13 +22,13 @@ class _ScreensplashState extends State<Screensplash> {
       body: Container(
         width: double.infinity,
         height: double.infinity,
-        color: Colors.black87,
+        color: Colors.white,
         child: Column(
           children: [
             Column(
               children: [
                 SizedBox(
-                  height: 250,
+                  height: 300,
                 ),
                 Image.asset(
                   "asset/splash icon.png",
