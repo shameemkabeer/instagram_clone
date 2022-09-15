@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:instagram/datas/chat_screen_tiles.dart';
+import 'package:instagram/tabs/general.dart';
 import 'package:instagram/tabs/primary.dart';
+import 'package:instagram/tabs/requests.dart';
 
 class chatscreen extends StatefulWidget {
   const chatscreen({Key? key}) : super(key: key);
@@ -87,12 +89,8 @@ class _chatscreenState extends State<chatscreen>
           controller: _tabController,
           children: [
             primary(chatdata: chatlists.first),
-            Tab(
-              child: Text("data"),
-            ),
-            Tab(
-              child: Text("data"),
-            ),
+            general(),
+            requests(),
           ],
         ),
       ),
