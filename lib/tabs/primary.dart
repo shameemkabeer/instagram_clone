@@ -25,6 +25,7 @@ class _primaryState extends State<primary> {
                   backgroundColor: Colors.blue,
                   backgroundImage: NetworkImage(chatlists[index].avatar),
                 ),
+                trailing: Icon(Icons.camera_alt_outlined),
                 title: Text(
                   chatlists[index].name,
                   style: TextStyle(fontWeight: FontWeight.bold),
