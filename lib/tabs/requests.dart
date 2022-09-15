@@ -72,6 +72,31 @@ class requests extends StatelessWidget {
                       color: Colors.black54,
                     ))
               ],
+            ),
+            Padding(padding: EdgeInsets.only(top: 200)),
+            CircleAvatar(
+              backgroundColor: Colors.black,
+              radius: 60,
+              child: CircleAvatar(
+                backgroundColor: Colors.white,
+                radius: 57,
+                backgroundImage: NetworkImage(
+                    "https://static.thenounproject.com/png/2796195-200.png"),
+              ),
+            ),
+            Padding(padding: EdgeInsets.only(bottom: 20)),
+            Text(
+              "No message requests",
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 28),
+            ),
+            Padding(padding: EdgeInsets.only(bottom: 10)),
+            Text(
+              "You don't have any message",
+              style: TextStyle(fontSize: 18, color: Colors.black54),
+            ),
+            Text(
+              "requests.",
+              style: TextStyle(fontSize: 18, color: Colors.black54),
             )
           ],
         ));
