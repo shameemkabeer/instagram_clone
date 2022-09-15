@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:instagram/datas/chat_screen_tiles.dart';
-import 'package:instagram/tabs/general.dart';
+import 'package:instagram/tabs/calls.dart';
+import 'package:instagram/tabs/calls.dart';
 import 'package:instagram/tabs/primary.dart';
 import 'package:instagram/tabs/requests.dart';
 
@@ -77,11 +78,15 @@ class _chatscreenState extends State<chatscreen>
             tabs: [
               Tab(text: "Primary"),
               Tab(
-                text: "General",
+                text: "Calls",
               ),
-              Tab(
-                text: "Requests",
-              )
+              IconButton(
+                  onPressed: () {
+                    Navigator.of(context).push(MaterialPageRoute(
+                      builder: (context) => requests(),
+                    ));
+                  },
+                  icon: Text("shameem"))
             ],
           ),
         ),
@@ -89,7 +94,7 @@ class _chatscreenState extends State<chatscreen>
           controller: _tabController,
           children: [
             primary(chatdata: chatlists.first),
-            general(),
+            calls(),
             requests(),
           ],
         ),
