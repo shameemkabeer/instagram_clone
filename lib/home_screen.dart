@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/foundation/key.dart';
-import 'package:flutter/src/widgets/framework.dart';
+import 'package:instagram/chat_page.dart';
 
 class homescreen extends StatefulWidget {
   const homescreen({Key? key}) : super(key: key);
@@ -27,18 +26,28 @@ class _homescreenState extends State<homescreen> {
         actions: [
           Padding(
             padding: const EdgeInsets.only(right: 0.0),
-            child: Icon(
-              Icons.add_box_outlined,
-              size: 30,
-              color: Colors.black,
-            ),
+            child: IconButton(
+                onPressed: () {},
+                icon: Icon(
+                  Icons.add_box_outlined,
+                  size: 30,
+                  color: Colors.black,
+                )),
           ),
           Padding(
-              padding: const EdgeInsets.only(right: .0),
-              child: Image.asset(
-                "asset/mess.jpg",
-                scale: 1.8,
-              ))
+            padding: const EdgeInsets.only(right: .0),
+            child: IconButton(
+                onPressed: () {
+                  Navigator.of(context).push(MaterialPageRoute(
+                    builder: (context) => chatscreen(),
+                  ));
+                },
+                icon: Icon(
+                  Icons.send,
+                  size: 30,
+                  color: Colors.black,
+                )),
+          ),
         ],
         automaticallyImplyLeading: false,
       ),
